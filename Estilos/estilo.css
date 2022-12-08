@@ -1,0 +1,119 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background: blue;
+    
+}
+
+.container {
+    height: 100vh;
+    width:  100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calculator{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    background-color: yellow;
+
+}
+#display{
+    color: black;
+    margin: 0 10px;
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+#clear{
+    background-color: red;
+    color: #fc4554;
+}
+
+.btn-number {
+    background-color: red;
+    color: black;
+
+}
+
+.btn-operator {
+    background-color: red;
+    color: black;
+}
+
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: black;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+.theme-toggler::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    z-index: -1;
+}
+
+.theme-toggler .active{
+    color: #333;
+}
+
+.theme-toggler .active::before {
+    background-color: black;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0; 
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#equal {
+    height: 130px;
+    background-color: red;
+    color: black
+
+}
+
+#backspace{
+    color: black;
+    background-color: red;
+    
+}
+
+#clear{
+    background-color: red;
+    color: black;
+}
